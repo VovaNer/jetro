@@ -61,6 +61,10 @@ header nav {
   transform: scaleX(1);
 }
 
+.menu {
+  margin-left: auto;
+}
+
 #mainSlider .carousel-control-next-icon,
 .carousel-control-prev-icon {
   width: 6rem;
@@ -208,4 +212,70 @@ header nav {
 
 .works-examples .card:hover .works-card-layer {
   opacity: 1;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #e8663c;
+  padding: 4rem 0 6rem 0;
+  color: #fff;
+}
+
+.footer-box {
+  margin-bottom: 3rem;
+}
+
+.footer-title {
+  font-size: 2.3rem;
+  letter-spacing: .12rem;
+}
+
+.footer-text {
+  font-size: 1.3rem;
+  font-family: sans-serif;
+  margin-top: 2rem;
+  width: 95%;
+  color: rgb(240, 240, 240);
+}
+
+.grey-text {
+  color: #ccc;
+}
+
+.social {
+  margin-top: 2rem;
+}
+
+.social-icon {
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 1rem;
+  scale: 1;
+  transition: all .3s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: rotate(360deg) scale(1.5);
+}
+
+@media screen and (max-width: 476px) {
+  .header-logo {
+    margin: 0 auto;
+  }
+
+  .menu {
+    margin: .7rem auto 0 auto;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .nav-link {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .nav-link {
+    font-size: 1.2rem;
+  }
 }

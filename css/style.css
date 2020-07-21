@@ -5,12 +5,18 @@
   box-sizing: border-box;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   font-size: 10px;
 }
 
 body {
   background: url("../img/header-bg.png") center center no-repeat;
+  letter-spacing: 0.02rem;
 }
 
 a,
@@ -18,6 +24,10 @@ a:visited,
 a:link {
   color: inherit;
   text-decoration: none;
+}
+
+a:active {
+  color: #e8663c;
 }
 
 ul,
@@ -278,4 +288,130 @@ header nav {
   .nav-link {
     font-size: 1.2rem;
   }
+}
+
+/* About Us */
+
+/* page name line */
+.pageName-line {
+  background-color: #e8663c;
+
+  height: 6rem;
+}
+
+.pageName-line h3 {
+  line-height: 6rem;
+  color: #fff;
+  letter-spacing: .15rem;
+}
+
+/* Main Content Section */
+.main {
+  padding-top: 3rem;
+
+}
+
+.main p {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  width: 90%;
+}
+
+.main-content-img {
+  background: url('../img/mike.png') center center no-repeat;
+  /* background-size: cover; */
+}
+
+@media screen and (max-width: 767px) {
+  .main-content-img {
+    display: none;
+  }
+
+  .main-content-quoteLine {
+    display: none;
+  }
+}
+
+.main-content-wimg {
+  margin-top: 3rem;
+}
+
+.firstLetter::first-letter {
+  font-size: 3.6rem;
+  color: #e8663c;
+  float: left;
+  font-weight: 700;
+  line-height: 2rem;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.main-content-quote {
+  font-family: sans-serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: rgb(50, 50, 50);
+  margin-bottom: 0;
+  padding: 1rem 0;
+}
+
+.main-content-quoteLine {
+  background-color: #e8663c;
+  width: 20%;
+  min-height: 100%;
+  margin-left: auto;
+}
+
+.content-alert {
+  font-size: 2.4rem;
+}
+
+.alert-box1:hover {
+  background-color: #98c601;
+  color: #effeb9
+}
+
+.alert-box {
+  padding: 3rem 3rem;
+  text-align: center;
+
+}
+
+.alert-box1 {
+  background-color: #effeb9;
+  border: .2rem solid #98c601;
+  color: #98c601;
+}
+
+.alert-box2 {
+  background-color: #fbcbc1;
+  border: .2rem solid #eb5439;
+  color: #eb5439;
+}
+
+.alert-box2:hover {
+  background-color: #eb5439;
+  color: #fbcbc1
+}
+
+.alert-box3 {
+  background-color: #ffe9ad;
+  border: .2rem solid #fab418;
+  color: #fab418;
+}
+
+.alert-box3:hover {
+  background-color: #fab418;
+  color: #ffe9ad
+}
+
+.alert-box4 {
+  background-color: #d1e4f3;
+  border: .2rem solid #4d8fcb;
+  color: #4d8fcb;
+  margin-bottom: 5rem !important;
+}
+
+.alert-box4:hover {
+  background-color: #4d8fcb;
+  color: #d1e4f3
 }
